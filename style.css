@@ -1,0 +1,90 @@
+html, body {
+   display: flex;
+   flex-flow: column nowrap;
+   min-height: 100vh;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+ 
+header {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 1em;
+  background-color: #ffffff;
+}
+hr {
+  width: 3em;
+  height: 5px;
+  background-color:rgb(128, 122, 122);
+  opacity: 0.4;
+  margin-top: 2px;
+}
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 2px;
+}
+p.header{
+  font-family: 'Courier New', Courier, monospace;
+  opacity: 0.9;
+  color:black;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  background-color: #ffffff;
+ 
+}
+
+main article {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 2em;
+  
+}
+article section {
+  border: 1px solid;
+  padding: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  border: none;  
+  transition: 1s;
+
+  perspective: 1000px;
+}
+image{
+  width: 15em;
+}
+figcaption{
+  margin-left: 1em;
+}
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 1em;
+  background-color:rgb(128, 122, 122);
+}
+
+.back {
+  background-color: gray;
+  transform: rotateY(180deg);
+
+}
+
+div:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+  transform: scale(1.5, 1.5);
+
+}
+
